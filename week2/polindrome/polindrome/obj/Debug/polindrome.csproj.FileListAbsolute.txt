@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\week2\polindrome\polindrome\bin\Debug\polindrome.exe.config
+C:\Users\user\Desktop\week2\polindrome\polindrome\bin\Debug\polindrome.exe
+C:\Users\user\Desktop\week2\polindrome\polindrome\bin\Debug\polindrome.pdb
+C:\Users\user\Desktop\week2\polindrome\polindrome\obj\Debug\polindrome.csprojAssemblyReference.cache
+C:\Users\user\Desktop\week2\polindrome\polindrome\obj\Debug\polindrome.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\week2\polindrome\polindrome\obj\Debug\polindrome.exe
+C:\Users\user\Desktop\week2\polindrome\polindrome\obj\Debug\polindrome.pdb
