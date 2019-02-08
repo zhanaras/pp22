@@ -10,33 +10,36 @@ namespace task1
     {
         static void Main(string[] args)
         {
-            int length = int.Parse(Console.ReadLine());
-            int[] array = new int[length];
-
-            string s = Console.ReadLine();
-            string[] arr = s.Split();
-            for (int i = 0; i < length; i++)
+        // Reading a line and converting it to integer
+            int n = int.Parse(Console.ReadLine()); 
+            //reading the numbers and splitting them by space
+            string[] numb = Console.ReadLine().Split(' '); 
+            //creating a new list
+            List<int> list = new List<int>(); 
+            for (int i = 0; i < n; i++)
             {
-                array[i] = int.Parse(arr[i]);
-            }
-            bool prime = false;
-            int cnt = 0;
-            foreach (int number in array)
-            {
-                for (int i = 2; i < Math.Sqrt(number); i++)
+                //converting the numbers to integers
+                int x = int.Parse(numb[i]); 
+                int ok = 1;
+                // Identifying the primes
+                for (int j = 2; j <= x / 2; j++) 
                 {
-                    if (number % i == 0)
-                        prime = false;
-                    else
-                        cnt++;
-                    if (prime == true)
+                    if (x % j == 0)
                     {
-                        Console.WriteLine(number + " ");
+                        ok = 0;
+                        break;
                     }
-
                 }
-                Console.ReadKey();
+             // adding primes to the list
+                if (ok == 1 && x > 1) 
+                    list.Add(x);
             }
+            //displaying the number of elements in the list w primes
+            Console.WriteLine(list.Count);
+            for (int i = 0; i < list.Count; i++)
+                //displaying the primes
+                Console.Write(list[i] + " "); 
+            Console.ReadKey();
         }
     }
 }
