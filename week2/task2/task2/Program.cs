@@ -10,40 +10,38 @@ namespace task2
     class Program
     {
         static void Main(string[] args)
-        {
-            String line;
-            
-            //Pass the file path and file name to the StreamReader constructor
-                StreamReader sr = new StreamReader("C:\\input.txt");
-            
-
-                //Read the first line of text
-                line = sr.ReadToEnd();
-
-                int[] array = new int[line.Length];
-                string[] s = line.Split();
-
-                //Continue to read until you reach end of file
-                for(int i=0; i<500500; i++)
+        {  
+            //function to identify prime numbers
+                bool isPrime(int x)
                 {
-                    array[i] = int.Parse(s[i]);
+                    int crt = 0;
+                    for (int i = 1; i <= x; i++)
+                    {
+                        if (x % i == 0)
+                        {
+                            crt++;
+                        }
+                    }
+                    if (crt == 2) return true;
+                    return false;
                 }
-               
-                //close the file
+            //setting the pah for in and output files
+                StreamReader sr = new StreamReader(@"C:\Users\user\Desktop\task2\input.txt");
+                StreamWriter sw = new StreamWriter(@"C:\Users\user\Desktop\task2\output.txt");
+            //creating an array of elemetns from input file
+                string[] arr = sr.ReadLine().Split();
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    int x = int.Parse(arr[i]);
+                    if (isPrime(x) == true)
+                    {
+                    //writing numbers, that satisfies given condition
+                        sw.Write(x + " ");
+                    }
+                }
                 sr.Close();
-                Console.ReadLine();
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter (@"C:\\output.txt"))
-
-            for (int i=3; i<=(int)Math.Floor(Math.Sqrt(array[i])); i += 2)
-                {
-                   if(array[i] % i == 0)
-                {
-                        file.WriteLine(array[i]);
-                }
-                }
-
-
-            Console.ReadKey();
+                sw.Close();
         }
     }
 }
+
