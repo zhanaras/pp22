@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\week3\fm\fm\bin\Debug\fm.exe.config
+C:\Users\user\Desktop\week3\fm\fm\bin\Debug\fm.exe
+C:\Users\user\Desktop\week3\fm\fm\bin\Debug\fm.pdb
+C:\Users\user\Desktop\week3\fm\fm\obj\Debug\fm.csprojAssemblyReference.cache
+C:\Users\user\Desktop\week3\fm\fm\obj\Debug\fm.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\week3\fm\fm\obj\Debug\fm.exe
+C:\Users\user\Desktop\week3\fm\fm\obj\Debug\fm.pdb
