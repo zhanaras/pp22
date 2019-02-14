@@ -16,7 +16,7 @@ namespace fm
         {
             cursor = 0;
         }
-
+        //defining the size of choosen path
         public FarManager(string path)
         {
             this.path = path;
@@ -25,7 +25,7 @@ namespace fm
             sz = directory.GetFileSystemInfos().Length;
             ok = true;
         }
-
+        //changin the color depending on cursor
         public void Color(FileSystemInfo fs, int index)
         {
             if (cursor == index)
@@ -45,7 +45,7 @@ namespace fm
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
             }
         }
-
+        //hiding file starting with "."
         public void Show()
         {
             Console.BackgroundColor = ConsoleColor.Black;
@@ -63,6 +63,8 @@ namespace fm
                 k++;
             }
         }
+
+        //moving cursor
         public void Up()
         {
             cursor--;
@@ -75,7 +77,7 @@ namespace fm
             if (cursor == sz)
                 cursor = 0;
         }
-
+        //changing the size of our path if there're files starting wit "."
         public void CalcSz()
         {
             directory = new DirectoryInfo(path);
@@ -86,7 +88,7 @@ namespace fm
                     if (fs[i].Name[0] == '.')
                         sz--;
         }
-
+        //giving commands
         public void Start()
         {
             ConsoleKeyInfo consoleKey = Console.ReadKey();
@@ -126,7 +128,7 @@ namespace fm
         }
 
     }
-
+    //starting the program
     class Program
     {
         static void Main(string[] args)
