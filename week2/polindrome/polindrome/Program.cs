@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace polindrome
 {
@@ -10,7 +11,8 @@ namespace polindrome
     {
         static void Main(string[] args)
         {
-            string word = Console.ReadLine();
+            StreamReader sr = new StreamReader(@"C:\Users\user\pp22\week2\polindrome\input.txt");
+            string word = sr.ReadLine();
             char[] arr = word.ToCharArray();
             string reverse = String.Empty;
             //reversing the string
