@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\week 6\snake2\snake2\bin\Debug\snake2.exe.config
+C:\Users\user\Desktop\week 6\snake2\snake2\bin\Debug\snake2.exe
+C:\Users\user\Desktop\week 6\snake2\snake2\bin\Debug\snake2.pdb
+C:\Users\user\Desktop\week 6\snake2\snake2\obj\Debug\snake2.csprojAssemblyReference.cache
+C:\Users\user\Desktop\week 6\snake2\snake2\obj\Debug\snake2.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\week 6\snake2\snake2\obj\Debug\snake2.exe
+C:\Users\user\Desktop\week 6\snake2\snake2\obj\Debug\snake2.pdb
